@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    /* cores */
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+
+    /* fontes */
+    --fonte-principal:'Inter', sans-serif ;
+}
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-color: var(--cor-de-fundo);
+    color:var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size:1rem;
+    font-weight: 400;
+    margin-bottom:100rem;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    height: 100vh;/*100% da tela. Isso acaba quando você da um scroll para baixo*/
+    display: grid;
+    grid-template-columns: 50% 50%; /*Dessa maneira, a primeira e a segunda coluna ocupará metade da tela (50% e 50%). Inspecione e veja !*/
+    align-items: center;
+}
+.principal{
+    background: url(../img/Background.png) no-repeat top right;
+    background-position-y: center;
+    background-size: contain;
+}
+.container__caixa{
+    text-align: center;
+    margin: 0rem 6rem;
+}
+.primario__imagem{
+    margin:2rem 0rem;
+}
+.container__aviso{
+    color:var(--cinza-secundario);
+    font-size:0.7rem;
+    text-align: center;
+}
+.container__titulo{
+    font-size:2rem;
+}
+.container__botao{
+    display:block;
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    border-radius:7px;
+    text-decoration: none;
+    padding:1.5rem;
+    margin-bottom: 1rem;
+    font-size:1.5rem;
+    text-align: center;
+}   
+.botao__secundario{
+    background-color: transparent;
+    border:2px solid var(--branco-principal);
+}
+.container__botao:hover{
+    box-shadow: 1px 1px 20px var(--botao-azul)  /* Sombra mais intensa */
+}
+.botao__secundario:hover{
+    box-shadow: 1px 1px 20px white  /* Sombra mais intensa */
+}
+/*-------------------------------
+Section secundario*/
+.secundario{
+    margin:0 6em;
+}
+.secundario__imagem{
+    width:95%;
+}   
+.container__descricao{
+    display:flex;
+    flex-direction: column;
+    gap:1.2rem;
+    width: 95%;
+}
+.teste__1{
+    justify-self: flex-end;
+}
+.descricao__titulo , .dispositivos__titulo{
+    font-size:3rem;
+}
+.descricao__texto{
+    color:var(--cinza-secundario);
+}
+.alinhar__imagem__direita{
+    display: flex;
+    justify-content: end;
+}
+/*---------------------------------
+dispositivos*/
+.dispositivos{
+    text-align: center;
+    margin:4rem 6rem;
+}
+.dispositivos__caixa{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:2rem;    
+}
+
+.rodape{
+    font-size: 0.8rem;
+    color:var(--cinza-secundario);
+    text-align: center;
+    margin:0rem 6rem;
+
+}
+.rodape__lista{
+    display:flex;
+    justify-content: center;
+    margin:2rem 0rem;
+    gap:1rem;
+}
+.rodape__lista a{
+    text-decoration: none;
+    color:var(--cinza-secundario);
+}
+.rodape__lista a:hover{
+    border-bottom:1px solid var(--branco-principal);
+}
+
+
