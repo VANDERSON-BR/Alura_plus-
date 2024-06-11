@@ -186,5 +186,17 @@ body {
     .dispositivos__lista{
         display: block;
     }
+    
+    .dispositivos__lista img{
+        width:50vw;
+    }
+
+    .dispositivos__titulo{
+        font-size:1.4rem;
+    }
+
+    .lista__item{
+        font-size:1rem;
+    }
 
 }
